@@ -100,7 +100,7 @@ if st.sidebar.button("Predict Cancer Risk (Manual Entry)"):
         ]).reshape(1, -1)
         
         # Predict cancer risk percentage
-        risk = manual_model.predict(features)[0]
+        risk = manual_model.predict(features)
         st.write(f"**Predicted Cancer Risk (Manual Entry):** {risk:.2f}%")
 
 # Image upload and prediction
