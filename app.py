@@ -96,7 +96,7 @@ if st.sidebar.button("Predict Cancer Risk (Manual Entry)"):
             margins,
             calcifications,
             tirads,
-            float(malignant_percentage)
+            malignant_percentage
         ]).reshape(1, -1)
         
         # Predict cancer risk percentage
