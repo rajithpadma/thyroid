@@ -89,7 +89,7 @@ manual_model = pickle.load(open("Decision_Tree.pkl", "rb"))
 if st.sidebar.button("Predict Cancer Risk (Manual Entry)"):
         
         features = np.array([
-            int(age),
+            age,
             sex,
             composition,
             echogenicity,
